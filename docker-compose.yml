@@ -1,0 +1,12 @@
+version: "3"
+services:
+  php-swoole:
+    build: php-swoole
+    ports:
+      - "9501:9501"
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
